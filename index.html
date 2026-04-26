@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriella Mae Lapad | Portfolio</title>
+    <style>
+        :root {
+            --primary: #c8798c;      /* Deep Dusty Rose for headers and footer */
+            --secondary: #e5a9b7;    /* Soft Pink for tags and accents */
+            --bg-color: #fdf5f6;     /* Very Light Blush background */
+            --text-color: #4a3b3e;   /* Warm Dark Slate for highly readable text */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: var(--bg-color); /* Adjusted to match the new lighter background variable */
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            color: var(--primary);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Softened the shadow for the lighter theme */
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .tag {
+            display: inline-block;
+            background: var(--secondary);
+            color: white; /* White text looks great against the soft pink tags */
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gabriella Mae Lapad</h1>
+        <p>Data Science Student & Community Leader</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Data Science student at the University of Science and Technology of Southern Philippines (USTP). I am passionate about leveraging machine learning, IoT development, and Edge AI to create technology that directly benefits communities. Beyond coding, I serve as a student and purok youth leader in Cagayan de Oro City, driving environmental advocacy and sustainability initiatives.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>SONARA</h3>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Edge AI</span>
+                    <span class="tag">IoT</span>
+                    <p>A bioacoustic surveillance system utilizing Edge AI to detect respiratory issues in poultry, enabling early intervention and healthier livestock management.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Project E-KONEKTA & Seeds of Hope</h3>
+                    <span class="tag">Community Leadership</span>
+                    <span class="tag">Sustainability</span>
+                    <p>Spearheaded local environmental awareness seminars, tree planting events, and structured weekly monitoring initiatives to promote active waste management and ecological growth.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>Music & Art</h3>
+                    <p>When I'm not studying or leading community projects, I love to express myself creatively. You can usually find me <strong>drawing</strong>, playing the <strong>guitar</strong>, or <strong>singing</strong> (especially my favorite K-Pop tracks).</p>
+                </div>
+
+                <div class="card">
+                    <h3>Reading & Watching</h3>
+                    <p>I am a huge fan of visual storytelling and web novels. I spend a lot of my downtime reading <strong>manga, manhwa,</strong> and <strong>Wattpad</strong> stories, or kicking back to watch <strong>anime</strong>.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Gaming</h3>
+                    <p>Whether it is to unwind after a long day of coding or to team up with friends, I really enjoy playing <strong>online games</strong>.</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Connect with me: g.lapad@example.com | Cagayan de Oro City, Philippines</p>
+    </footer>
+
+</body>
+</html>
