@@ -6,10 +6,10 @@
     <title>Gabriella Mae Lapad | Portfolio</title>
     <style>
         :root {
-            --primary: #c8798c;      /* Deep Dusty Rose for headers and footer */
-            --secondary: #e5a9b7;    /* Soft Pink for tags and accents */
-            --bg-color: #fdf5f6;     /* Very Light Blush background */
-            --text-color: #4a3b3e;   /* Warm Dark Slate for highly readable text */
+            --primary: #c8798c;      
+            --secondary: #e5a9b7;    
+            --bg-color: #fdf5f6;     
+            --text-color: #4a3b3e;   
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +31,7 @@
         }
         header p {
             font-size: 1.2rem;
-            color: var(--bg-color); /* Adjusted to match the new lighter background variable */
+            color: var(--bg-color); 
             margin-top: 10px;
         }
         .container {
@@ -56,7 +56,7 @@
             background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Softened the shadow for the lighter theme */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
         }
         .card:hover {
@@ -69,38 +69,121 @@
         .tag {
             display: inline-block;
             background: var(--secondary);
-            color: white; /* White text looks great against the soft pink tags */
+            color: white;
             padding: 3px 8px;
             border-radius: 15px;
             font-size: 0.8rem;
             margin-right: 5px;
             margin-bottom: 10px;
         }
+        
+        /* Biodata & Avatar Styles */
+        .avatar-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 180px; /* Adjust size if needed */
+            height: auto;
+            border: 2px solid var(--text-color); /* Matches the dark border in your screenshot */
+            border-radius: 4px;
+        }
+        .section-title-center {
+            text-align: center;
+            border: none;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        .biodata-title {
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .biodata-list, .edu-list {
+            list-style: none;
+            padding: 0;
+            text-align: center; /* Centering text to match your screenshot */
+        }
+        .biodata-list li, .edu-list li {
+            margin-bottom: 12px;
+        }
+        .biodata-list strong, .edu-list strong {
+            color: var(--text-color);
+        }
+        hr.divider {
+            border: 0;
+            border-top: 1px solid var(--secondary);
+            margin: 30px 0;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
             background: var(--primary);
             color: white;
         }
+        footer p {
+            margin: 5px 0;
+        }
+        footer .quote {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Gabriella Mae Lapad</h1>
+        <h1>Hello, I'm Gabby!</h1>
         <p>Data Science Student & Community Leader</p>
     </header>
 
     <div class="container">
+        
         <section id="about">
             <h2>About Me</h2>
             <p>I am a Data Science student at the University of Science and Technology of Southern Philippines (USTP). I am passionate about leveraging machine learning, IoT development, and Edge AI to create technology that directly benefits communities. Beyond coding, I serve as a student and purok youth leader in Cagayan de Oro City, driving environmental advocacy and sustainability initiatives.</p>
         </section>
 
+        <section id="biodata">
+            <h2 class="section-title-center">GET TO KNOW ABOUT ME!</h2>
+            
+            <div class="card" style="background-color: transparent; box-shadow: none;">
+                <div class="avatar-container">
+                    <img src="avatar.png" alt="Gabby's Avatar" class="avatar">
+                </div>
+                
+                <h3 class="biodata-title">MY BIODATA</h3>
+                
+                <ul class="biodata-list">
+                    <li><strong>Full Name:</strong> Gabriella Mae Lapad</li>
+                    <li><strong>Date of Birth:</strong> May 15, 2005</li>
+                    <li><strong>Age:</strong> 20</li>
+                    <li><strong>Gender:</strong> Female</li>
+                    <li><strong>Course:</strong> 3rd year - BS Data Science</li>
+                    <li><strong>Hobbies:</strong> Music, Playing Online Games, Reading Fictions</li>
+                    <li><strong>Email:</strong> lapad.gabriellamae123@gmail.com</li>
+                </ul>
+
+                <hr class="divider">
+
+                <h3 class="biodata-title">EDUCATIONAL BACKGROUND</h3>
+                <ul class="edu-list">
+                    <li><strong>College:</strong> University of Science and Technology of Southern Philippines</li>
+                    <li><strong>Senior High:</strong> Liceo De Cagayan University</li>
+                    <li><strong>Secondary:</strong> East Gusa National High School</li>
+                    <li><strong>Primary:</strong> Gusa Elementary School</li>
+                </ul>
+            </div>
+        </section>
+
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="grid">
-                
                 <div class="card">
                     <h3>SONARA</h3>
                     <span class="tag">Machine Learning</span>
@@ -108,41 +191,37 @@
                     <span class="tag">IoT</span>
                     <p>A bioacoustic surveillance system utilizing Edge AI to detect respiratory issues in poultry, enabling early intervention and healthier livestock management.</p>
                 </div>
-
                 <div class="card">
                     <h3>Project E-KONEKTA & Seeds of Hope</h3>
                     <span class="tag">Community Leadership</span>
                     <span class="tag">Sustainability</span>
                     <p>Spearheaded local environmental awareness seminars, tree planting events, and structured weekly monitoring initiatives to promote active waste management and ecological growth.</p>
                 </div>
-
             </div>
         </section>
 
         <section id="hobbies">
             <h2>Hobbies & Interests</h2>
             <div class="grid">
-                
                 <div class="card">
                     <h3>Music & Art</h3>
                     <p>When I'm not studying or leading community projects, I love to express myself creatively. You can usually find me <strong>drawing</strong>, playing the <strong>guitar</strong>, or <strong>singing</strong> (especially my favorite K-Pop tracks).</p>
                 </div>
-
                 <div class="card">
                     <h3>Reading & Watching</h3>
                     <p>I am a huge fan of visual storytelling and web novels. I spend a lot of my downtime reading <strong>manga, manhwa,</strong> and <strong>Wattpad</strong> stories, or kicking back to watch <strong>anime</strong>.</p>
                 </div>
-
                 <div class="card">
                     <h3>Gaming</h3>
                     <p>Whether it is to unwind after a long day of coding or to team up with friends, I really enjoy playing <strong>online games</strong>.</p>
                 </div>
-
             </div>
         </section>
+
     </div>
 
     <footer>
+        <p class="quote">“Thank you for taking the time to learn more about me. I'm excited to grow and contribute in the field of Data Science.”</p>
         <p>Connect with me: lapad.gabriellamae123@gmail.com | Cagayan de Oro City, Philippines</p>
     </footer>
 
